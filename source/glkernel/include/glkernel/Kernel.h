@@ -3,7 +3,7 @@
 
 #include <vector>
 
-//#include <glm/gtc/type_ptr.hpp>
+#include <glm/fwd.hpp>
 #include <glm/gtc/type_precision.hpp>
 
 

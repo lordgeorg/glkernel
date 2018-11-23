@@ -18,6 +18,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>
 #include <glm/gtc/constants.hpp>
+#undef GLM_ENABLE_EXPERIMENTAL
 
 
 namespace glkernel

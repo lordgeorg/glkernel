@@ -66,13 +66,13 @@ void uniform(tkernel<T> & kernel, const T range_min, const T range_max)
     kernel.template for_each<uniform_operator<T>>(range_min, range_max);
 }
 
-template <typename T, int l, glm::precision P, template<int, typename, glm::precision> class V>
+template <typename T, glm::length_t l, glm::precision P, template<glm::length_t, typename, glm::precision> class V>
 void uniform(tkernel<V<l, T, P>> & kernel, const T range_min, const T range_max)
 {
     kernel.template for_each<uniform_operator<T>>(range_min, range_max);
 }
 
-template <typename T, int l, glm::precision P, template<int, typename, glm::precision> class V>
+template <typename T, glm::length_t l, glm::precision P, template<glm::length_t, typename, glm::precision> class V>
 void uniform(tkernel<V<l, T, P>> & kernel, const V<l, T, P> & range_min, const V<l, T, P> & range_max)
 {
     kernel.template for_each<uniform_operator<T>>(range_min, range_max);

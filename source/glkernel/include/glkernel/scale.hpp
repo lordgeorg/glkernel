@@ -61,7 +61,7 @@ void range(tkernel<T> & kernel, T rangeToLower, T rangeToUpper, T rangeFromLower
     kernel.template for_each_element<range_operator<T>>(rangeToLower, rangeToUpper, rangeFromLower, rangeFromUpper);
 }
 
-template <typename T, int l, glm::precision P, template<int, typename, glm::precision> class V>
+template <typename T, glm::length_t l, glm::precision P, template<glm::length_t, typename, glm::precision> class V>
 void range(tkernel<V<l, T, P>> & kernel, T rangeToLower, T rangeToUpper, T rangeFromLower, T rangeFromUpper)
 {
     kernel.template for_each_element<range_operator<T>>(rangeToLower, rangeToUpper, rangeFromLower, rangeFromUpper);
