@@ -16,7 +16,7 @@ public:
 TEST_F(scale_test, range_compile)
 {
     auto fkernel2 = glkernel::kernel2{ 8, 8, 8 };
-    glkernel::scale::range(fkernel2, -0.5f, 0.5f);
+    glkernel::scale::range(fkernel2, -0.5f, 0.5f, 0.f, 1.f);
 }
 
 TEST_F(scale_test, range)

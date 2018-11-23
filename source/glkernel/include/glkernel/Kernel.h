@@ -3,7 +3,8 @@
 
 #include <vector>
 
-#include <glm/gtc/type_ptr.hpp>
+//#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/type_precision.hpp>
 
 
 namespace glkernel

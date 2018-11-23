@@ -36,8 +36,8 @@ glm::length_t kernel_length(const T &)
     return 1;
 }
 
-template <typename T, glm::precision P, template<typename, glm::precision> class V>
-glm::length_t kernel_length(const V<T, P> & type)
+template <typename T, glm::length_t l, glm::precision P, template<glm::length_t, typename, glm::precision> class V>
+glm::length_t kernel_length(const V<l, T, P> & type)
 {
     return type.length();
 }
