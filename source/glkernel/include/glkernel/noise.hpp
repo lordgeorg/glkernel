@@ -1,8 +1,6 @@
 
 #pragma once
 
-#include <glm/detail/setup.hpp>
-
 #include <glkernel/noise.h>
 
 #include <glkernel/glm_compatability.h>
